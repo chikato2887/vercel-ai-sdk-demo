@@ -30,6 +30,7 @@ export async function POST(req: Request) {
       A: 止められるか止められないかは好きな度合いに依ります。その反対もあり、相手が貴女の事を本当に好きなら「煙草止めなくってもいいよ！」と言ってくれます。    
       Q: ${prompt}
       A:`,
+    max_tokens: 1000
   });
   // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response);
